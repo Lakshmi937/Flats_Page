@@ -3,13 +3,15 @@
 
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css" />
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <!-- Home Page -->
+
     <div id="sectionSunriseAvenueHomePage">
         <div class="bg-FlatsPage d-flex flex-column justify-content-end">
             <div class="bg1-color">
@@ -21,13 +23,15 @@
     </div>
 
 
+
+    <!-- Flats List Page -->
     <div id="sectionFlatsListPage">
         <div class="bg-FlatsListPage">
             <h1 class="FlatsListPage-Heading2">Sunrise Avenue</h1>
-
+            <!-- 3BHK -->
             <div class="FlatsListPage-box d-flex flex-row">
                 <div>
-                    <img src="https://assets.ccbp.in/frontend/static-website/flats-list-d1-img.png" width="100" height="195" class="FlatsListPage-img" onclick="display('section3BHKFlatPage')" />
+                    <img src="https://assets.ccbp.in/frontend/static-website/flats-list-d1-img.png" class="FlatsListPage-img" onclick="display('section3BHKFlatPage')" />
                 </div>
                 <div>
                     <h1 class="FlatsListPage-box-Heading">3BHK Flat</h1>
@@ -37,9 +41,10 @@
 
 
 
+            <!-- 2BHK -->
             <div class="FlatsListPage-box d-flex flex-row">
                 <div>
-                    <img src="https://assets.ccbp.in/frontend/static-website/flats-list-card2-img.png"  class="FlatsListPage-img" onclick="display('section2BHKFlatPage')" />
+                    <img src="https://assets.ccbp.in/frontend/static-website/flats-list-card2-img.png" class="FlatsListPage-img" onclick="display('section2BHKFlatPage')" />
                 </div>
                 <div>
                     <h1 class="FlatsListPage-box-Heading">2BHK Flat</h1>
@@ -47,10 +52,10 @@
                 </div>
             </div>
 
-
+            <!-- 4BHK -->
             <div class="FlatsListPage-box d-flex flex-row">
                 <div>
-                    <img src="https://assets.ccbp.in/frontend/static-website/flats-list-card3-img.png"  class="FlatsListPage-img" onclick="display('section4BHKFlatPage')" />
+                    <img src="https://assets.ccbp.in/frontend/static-website/flats-list-card3-img.png" class="FlatsListPage-img" onclick="display('section4BHKFlatPage')" />
                 </div>
                 <div>
                     <h1 class="FlatsListPage-box-Heading">4BHK Flat</h1>
@@ -64,14 +69,14 @@
 
 
 
-
+    <!-- 3BHK Details -->
     <div id="section3BHKFlatPage">
         <div class="bg-FlatsPage3BHK">
             <img src="https://assets.ccbp.in/frontend/static-website/flats-list-d1-img.png" class="FlatsPage3BHK-img" />
             <h1 class="FlatsPage3BHK-Prize">Rs 3000/-</h1>
 
             <div class="d-flex flex-row">
-                <img src="https://assets.ccbp.in/frontend/static-website/flats-list-location-icon-img.png"  width="30" class="FlatsPage3BHK-location-img" />
+                <img src="https://assets.ccbp.in/frontend/static-website/flats-list-location-icon-img.png" width="30" class="FlatsPage3BHK-location-img" />
                 <div>
                     <p class="FlatsPage3BHK-address">D/N 5-2, Food Street, Indore</p>
                 </div>
@@ -87,6 +92,7 @@
 
 
 
+    <!-- 2BHK Details -->
     <div id="section2BHKFlatPage">
         <div class="bg-FlatsPage3BHK">
             <img src="https://assets.ccbp.in/frontend/static-website/flats-list-d2-img.png" class="FlatsPage3BHK-img" />
@@ -109,6 +115,7 @@
 
 
 
+    <!-- 4BHK Details -->
     <div id="section4BHKFlatPage">
         <div class="bg-FlatsPage3BHK">
             <img src="https://assets.ccbp.in/frontend/static-website/flats-list-d3-img.png" class="FlatsPage3BHK-img" />
@@ -128,8 +135,6 @@
             <button class="FlatsPage3BHK-Button2" onclick="display('sectionFlatsListPage')">Back</button>
         </div>
     </div>
-
-
 
     <script type="text/javascript" src="https://new-assets.ccbp.in/frontend/content/static-ccbp-ui-kit/static-ccbp-ui-kit.js"></script>
 </body>
